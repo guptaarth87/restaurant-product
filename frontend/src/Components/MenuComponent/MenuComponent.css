@@ -1,0 +1,129 @@
+.imageControl{
+    width:100%;
+    border-radius:20px;
+    object-fit: cover;
+    height:10rem;
+}
+
+
+/* menu carousal starts */
+
+.card{
+    --bs-card-border-width: 0;
+}
+
+.menu-carousal-card-div{
+    width: 240px;
+}
+
+.menu-carousal-card-heading-div{
+   margin-top: -30px;
+   position: relative;
+   z-index: 2;
+   text-align: center;
+  
+
+   background-color: rgba(228, 228, 228, 0.29);
+   border-radius: 30px;
+   padding: 10px 20px;
+   backdrop-filter: blur(14px);
+}
+
+.menu-carousal-card-heading-div p{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.733);
+}
+
+
+
+
+
+
+/* menu carousal ends */
+
+
+/* menu sub category starts */
+
+.menu-accordion{
+    border: none !important;
+    border-color: #ffffff00 !important;
+    border-width: 0px !important;
+}
+
+.accordion{
+    --bs-accordion-color: #ffffff00 !important;
+    --bs-accordion-border-width: 0px;
+}
+
+.menu-accordion-header{
+   
+   
+}
+
+
+.menu-accordion-button{
+    background-color: #46423c2d !important;
+    border-radius: 20px  !important;
+    margin: 5px 0px;
+    
+}
+
+.menu-subcategory-heading{
+    font-size: 19px;
+    font-weight: lighter;
+}
+
+
+.subcategory-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+
+/*  slider css  */
+.slider-upper-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slider-main-div{
+    
+    width: 90%;
+   
+}
+
+
+.slider-previous-btn{
+  position: absolute;
+  top: 30%;
+  left: -20px;
+  font-size: 33px;
+  color:  rgb(238, 181, 10);
+}
+
+
+.slider-next-btn{
+ position: absolute;
+ top: 30%;
+  right: -20px;
+  font-size: 33px;
+  color: rgb(238, 181, 10);
+}
+
+@media screen and (max-width : 600px){
+    .slider-previous-btn{
+       
+        left: 5px;
+        font-size: 23px;
+      }
+      
+      
+      .slider-next-btn{
+        right: 5px;
+        font-size: 23px;
+      }
+}

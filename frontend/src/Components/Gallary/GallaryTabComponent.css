@@ -1,0 +1,5 @@
+.gallary-img{
+    border-radius: 1.2rem !important;
+    object-fit:cover;
+    height:12rem;
+}

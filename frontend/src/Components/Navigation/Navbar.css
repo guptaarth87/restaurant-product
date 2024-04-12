@@ -1,0 +1,80 @@
+.fixing-navs{
+    width: 100dvh;
+    position: sticky;
+   
+    z-index: 3;
+    top: 0;
+    left: 200px;
+    height: 5rem;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 5px;
+}
+
+
+.nav-links:hover{
+    background: rgba(0, 0, 0, 0.137);
+    border-radius: 10px;
+    font-weight: bold;
+    
+}
+
+.nav-drop-shadow{
+    -webkit-box-shadow: 3px 10px 40px -7px rgba(0,0,0,0.58);
+-moz-box-shadow: 3px 10px 40px -7px rgba(0,0,0,0.58);
+box-shadow: 3px 10px 40px -7px rgba(0,0,0,0.58);
+}
+
+.nav-bell{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.sidebar-nav{
+    font-size: 19px;
+}
+
+
+.sidebar-nav a{
+    text-decoration:  none;
+    color: black;
+}
+
+
+.sidebar-quick-menu-items-container{
+    padding: 0px 18px;
+}
+
+
+/* .sidebar-menu-links{
+    height: 25px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #8c96ab;
+    
+} */
+
+
+.sidebar-menu-links a{
+    text-decoration: none;
+    color: black;
+}

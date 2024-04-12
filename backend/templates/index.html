@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Documentation</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+  <h2>API Documentation</h2>
+
+  <!-- API endpoints -->
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">1. GET /</h5>
+      <p class="card-text">Check if the application is running successfully.</p>
+      <p class="card-text"><strong>Request:</strong> Method: GET, URL: /</p>
+      <p class="card-text"><strong>Response:</strong> Status Code: 201, Body: { "message": "App running successfully" }</p>
+    </div>
+  </div>
+
+  <div class="card mt-3">
+    <div class="card-body">
+      <h5 class="card-title">2. POST /uploadmenu</h5>
+      <p class="card-text">Upload a new menu item.</p>
+      <p class="card-text"><strong>Request:</strong> Method: POST, URL: /uploadmenu</p>
+      <p class="card-text"><strong>Response:</strong> Status Code: 201, Body: { "message": "Menu uploaded successfully" }</p>
+    </div>
+  </div>
+
+  <div class="card mt-3">
+    <div class="card-body">
+      <h5 class="card-title">3. GET /getallmenu</h5>
+      <p class="card-text">Retrieve all menu items.</p>
+      <p class="card-text"><strong>Request:</strong> Method: GET, URL: /getallmenu</p>
+      <p class="card-text"><strong>Response:</strong> Status Code: 200, Body: Array of menu items.</p>
+    </div>
+  </div>
+
+  <div class="card mt-3">
+    <div class="card-body">
+      <h5 class="card-title">4. GET /getmenu</h5>
+      <p class="card-text">Retrieve menu items by category and subcategory.</p>
+      <p class="card-text"><strong>Request:</strong> Method: GET, URL: /getmenu?category={category}&subcategory={subcategory}</p>
+      <p class="card-text"><strong>Response:</strong> Status Code: 200, Body: Array of menu items matching the provided category and subcategory.</p>
+    </div>
+  </div>
+
+  <div class="card mt-3">
+    <div class="card-body">
+      <h5 class="card-title">5. PUT /updatemenu/:id</h5>
+      <p class="card-text">Update a menu item by ID.</p>
+      <p class="card-text"><strong>Request:</strong> Method: PUT, URL: /updatemenu/:id</p>
+      <p class="card-text"><strong>Response:</strong> Status Code: 200, Body: { "message": "Item updated successfully", "updated_data": { updated menu item object } }</p>
+    </div>
+  </div>
+
+  <div class="card mt-3">
+    <div class="card-body">
+      <h5 class="card-title">6. DELETE /deletemenu/:id</h5>
+      <p class="card-text">Delete a menu item by ID.</p>
+      <p class="card-text"><strong>Request:</strong> Method: DELETE, URL: /deletemenu/:id</p>
+      <p class="card-text"><strong>Response:</strong> Status Code: 200, Body: "Item deleted successfully"</p>
+    </div>
+  </div>
+
+  <!-- Additional routes -->
+  
+  <!-- Categories -->
+  <div class="card mt-3">
+    <div class="card-body">
+      <h5 class="card-title">7. POST /addcategory</h5>
+      <p class="card-text">Add a new category.</p>
+      <p class="card-text"><strong>Request:</strong> Method: POST, URL: /addcategory</p>
+      <p class="card-text"><strong>Response:</strong> Status Code: 201, Body: { "message": "Category added successfully" }</p>
+    </div>
+  </div>
+
+  <div class="card mt-3">
+    <div class="card-body">
+      <h5 class="card-title">8. GET /getcategory</h5>
+      <p class="card-text">Retrieve all categories.</p>
+      <p class="card-text"><strong>Request:</strong> Method: GET, URL: /getcategory</p>
+      <p class="card-text"><strong>Response:</strong> Status Code: 200, Body: Array of categories.</p>
+    </div>
+  </div>
+
+  <div class="card mt-3">
+    <div class="card-body">
+      <h5 class="card-title">9. PUT /updatecategory/:id</h5>
+      <p class="card-text">Update a category
+<!-- Continued from previous HTML -->
+
+<p class="card-text"><strong>Request:</strong> Method: PUT, URL: /updatecategory/:id</p>
+<p class="card-text"><strong>Response:</strong> Status Code: 200, Body: { "message": "Category updated successfully", "updated_data": { updated category object } }</p>
+</div>
+</div>
+
+<div class="card mt-3">
+<div class="card-body">
+<h5 class="card-title">10. DELETE /deletecategory/:id</h5>
+<p class="card-text">Delete a category by ID.</p>
+<p class="card-text"><strong>Request:</strong> Method: DELETE, URL: /deletecategory/:id</p>
+<p class="card-text"><strong>Response:</strong> Status Code: 200, Body: "Category deleted successfully"</p>
+</div>
+</div>
+
+<!-- Subcategories -->
+
+<div class="card mt-3">
+<div class="card-body">
+<h5 class="card-title">11. POST /addsubcategory</h5>
+<p class="card-text">Add a new subcategory.</p>
+<p class="card-text"><strong>Request:</strong> Method: POST, URL: /addsubcategory</p>
+<p class="card-text"><strong>Response:</strong> Status Code: 201, Body: { "message": "Subcategory added successfully" }</p>
+</div>
+</div>
+
+<div class="card mt-3">
+<div class="card-body">
+<h5 class="card-title">12. GET /getsubcategory/:category</h5>
+<p class="card-text">Retrieve all subcategories of a specific category.</p>
+<p class="card-text"><strong>Request:</strong> Method: GET, URL: /getsubcategory/:category</p>
+<p class="card-text"><strong>Response:</strong> Status Code: 200, Body: Array of subcategories.</p>
+</div>
+</div>
+
+<div class="card mt-3">
+<div class="card-body">
+<h5 class="card-title">13. GET /getsubcategorybyname/:subcategory_name</h5>
+<p class="card-text">Retrieve subcategories by name.</p>
+<p class="card-text"><strong>Request:</strong> Method: GET, URL: /getsubcategorybyname/:subcategory_name</p>
+<p class="card-text"><strong>Response:</strong> Status Code: 200, Body: Array of subcategories matching the provided name.</p>
+</div>
+</div>
+
+<div class="card mt-3">
+<div class="card-body">
+<h5 class="card-title">14. PUT /updatesubcategory/:id</h5>
+<p class="card-text">Update a subcategory by ID.</p>
+<p class="card-text"><strong>Request:</strong> Method: PUT, URL: /updatesubcategory/:id</p>
+<p class="card-text"><strong>Response:</strong> Status Code: 200, Body: { "message": "Subcategory updated successfully", "updated_data": { updated subcategory object } }</p>
+</div>
+</div>
+
+<div class="card mt-3">
+<div class="card-body">
+<h5 class="card-title">15. DELETE /deletesubcategory/:id</h5>
+<p class="card-text">Delete a subcategory by ID.</p>
+<p class="card-text"><strong>Request:</strong> Method: DELETE, URL: /deletesubcategory/:id</p>
+<p class="card-text"><strong>Response:</strong> Status Code: 200, Body: "Subcategory deleted successfully"</p>
+</div>
+</div>
+</div>
+
+</body>
+</html>

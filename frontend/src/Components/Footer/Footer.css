@@ -1,0 +1,8 @@
+.footer-bg{
+    background-image: url('../../assets/footer/footer-bg.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
+
+
